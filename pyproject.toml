@@ -1,0 +1,15 @@
+[project]
+name = "deepboreai-sdk"
+version = "0.1.0"
+description = "Python SDK and CLI for DeepBoreAI"
+authors = [{name="DeepBoreAI Team", email="support@deepbore.ai"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    "websocket-client",
+    "typer[all]"
+]
+
+[project.scripts]
+deepboreai = "deepboreai_sdk.cli:app"
